@@ -1,0 +1,64 @@
+#ccf-contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+#ccf-contact-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+#ccf-contact-form input[type="text"],
+#ccf-contact-form input[type="email"],
+#ccf-contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#ccf-contact-form textarea {
+    height: 150px;
+}
+
+#ccf-contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#ccf-contact-form button:hover {
+    background: #005f8d;
+}
+
+#ccf-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
