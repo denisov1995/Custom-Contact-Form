@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Custom Contact Form
- * Description: HERE_PRINT.
+ * Description: Custom Contact Form is a WordPress plugin that adds a contact form as a Gutenberg block.
  * Version: 1.0
- * Author: HERE_PRINT
+ * Author: Artem Denisov
  */
 
 if (!defined('ABSPATH')) {
@@ -106,14 +106,3 @@ function ccf_enqueue_frontend_assets()
 add_action('wp_enqueue_scripts', 'ccf_enqueue_frontend_assets');
 
 register_activation_hook(__FILE__, 'ccf_create_logs_table');
-
-// Отключение проверки сертификата SSL.
-add_action('phpmailer_init', function($phpmailer) {
-    $phpmailer->SMTPOptions = array(
-        'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-        )
-    );
-});
